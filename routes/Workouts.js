@@ -3,7 +3,7 @@ const { validateToken } = require("../middlewares/AuthMiddleware");
 const router = express.Router();
 const { Workouts } = require("../models");
 
-router.get("/multi/:limit", validateToken, async (req, res) => {
+router.get("/workoutslist/:limit", validateToken, async (req, res) => {
 	const area = req.query.area;
 	const limit = parseInt(req.params.limit);
 	const UserId = req.user.id;
@@ -42,8 +42,8 @@ router.put("/:id", validateToken, async (req, res) => {
 	res.json(updatedWorkout);
 });
 
-router.delete("/:workoutId", validateToken, async (req, res) => {
-	const workoutId = req.params.workoutId;
+router.delete("/:id", validateToken, async (req, res) => {
+	const workoutId = req.params.id;
 	await Workouts.destroy({
 		where: {
 			id: workoutId,

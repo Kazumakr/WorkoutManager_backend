@@ -19,7 +19,7 @@ app.use(cors(corsOptions));
 const db = require("./models");
 
 app.use("/workouts", workoutsRouter);
-app.use("/auth", usersRouter);
+app.use("/users", usersRouter);
 app.use("/days", daysRouter);
 app.use("/schedule", scheduleRouter);
 
