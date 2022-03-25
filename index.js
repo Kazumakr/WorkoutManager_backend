@@ -9,7 +9,7 @@ const daysRouter = require("./routes/Days");
 const scheduleRouter = require("./routes/Schedule");
 
 const corsOptions = {
-	origin: true,
+	origin: "http://localhost:3000",
 	credentials: true,
 	optionSuccessStatus: 200,
 };
