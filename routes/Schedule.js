@@ -20,7 +20,7 @@ router.put("/", validateToken, async (req, res) => {
 	const updatedSchedule = req.body;
 	updatedSchedule.UserId = req.user.id;
 	await Schedule.update(updatedSchedule, { where: { UserId: req.user.id } });
-	res.json(updatedShedule);
+	res.json(updatedSchedule);
 });
 
 module.exports = router;
