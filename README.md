@@ -55,9 +55,6 @@ I struggled with the nodejs frameworks sequelize and jwt. The code style of Sequ
    ```sh
    git clone https://github.com/Kazumakr/WorkoutManager_backend
    ```
-   ```
-
-   ```
 2. Install NPM packages
    ```sh
    npm install
