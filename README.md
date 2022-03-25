@@ -2,6 +2,8 @@
 
 This project is for managing workout records.
 
+<img width="1680" alt="WorkoutManager_screenshot" src="https://user-images.githubusercontent.com/67501734/160208930-55fc3ab2-f3df-4170-b96c-d490758b271b.png">
+
 Project Link: [https://spiffy-puppy-816ccb.netlify.app/]
 
 Test Account  
